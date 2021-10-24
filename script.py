@@ -13,11 +13,11 @@ import math
 # In[12]:
 
 
-if len(sys.argv) != 4:
-    print("usage is %s image_in image_out thresh" % (sys.argv[0]))
-    print("           thresh is btn 0 and 255")
-    print("           small values make detection more sensitive")
-    sys.exit()
+# if len(sys.argv) != 4:
+#     print("usage is %s image_in image_out thresh" % (sys.argv[0]))
+#     print("           thresh is btn 0 and 255")
+#     print("           small values make detection more sensitive")
+#     sys.exit()
 
 pil_image_rgb = Image.open(sys.argv[1])
 image_rgb = np.asarray(pil_image_rgb, float)
